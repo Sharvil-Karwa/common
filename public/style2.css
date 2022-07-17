@@ -1,0 +1,62 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+nav{
+    margin-bottom: -3.5%;
+}
+
+.login_img{
+    height: 100vh;
+}
+
+body{
+    overflow: hidden;
+}
+.row{
+    align-items: center;
+}
+
+label{
+    font-size: 1.2em;
+    color: #0c6aaa;
+} 
+
+input{
+    font-size: 1em;
+}
+
+.row h1{
+    color: #f2ad1c;
+}
+.row form{
+    margin: 2rem;
+} 
+
+.btn{
+    background-color: #0c6aaa;
+    color: #eee;
+    font-size: 0.9rem;
+} 
+
+a{
+    color: #0c6aaa;
+}
+
+/* import montserrat from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
