@@ -211,3 +211,18 @@ app.listen(process.env.PORT || 2000, function () {
     app.settings.env
   );
 });
+
+app.get("/college", function (req, res) {
+  if (req.isAuthenticated()) {
+    let college = "";
+    Student.find({ email: beta }, (err, items) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send("An error occurred", err);
+      }
+      college = items[0].college;
+    });
+  } else {
+    res.redirect("/login");
+  }
+});
